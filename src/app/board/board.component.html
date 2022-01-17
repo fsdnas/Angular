@@ -1,0 +1,22 @@
+<div class="top-container">
+  <h1>
+    Current Player: <span class="x-color" *ngIf="player == 'X'"
+      >{{ player }}
+    </span>
+    <span class="o-color" *ngIf="player == 'O'">{{ player }}</span>
+  </h1>
+
+  <button mat-raised-button color="warn" (click)="newGame()">
+    Start a New Game
+  </button>
+
+  <h2 class="won" *ngIf="winner">Player {{ winner }} won the game!</h2>
+</div>
+<main>
+  <app-square
+    *ngFor="let val of squares; let i = index"
+    [value]="val"
+    (click)="makeMove(i)"
+  >
+  </app-square>
+</main>

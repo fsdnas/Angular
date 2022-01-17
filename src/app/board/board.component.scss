@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 0px;
+  padding: 10px;
+}
+
+.top-container {
+  padding:10px;
+}
+
+app-square {
+  border: 1px solid grey;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.x-color {
+  color: #6200ee;
+  font-weight: 600;
+}
+
+.o-color{
+    color: #ffca58;
+    font-weight: 600;
+}
+
+.won{
+    color:green;
+}
